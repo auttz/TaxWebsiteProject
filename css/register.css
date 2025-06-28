@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    background-color: #f5f7fa;
+    height: 100vh;
+}
+
+.register-box {
+    margin-top: 50px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: auto;
+    width: 350px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.register-box h1 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.register-box input {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease;
+    width: 80%;
+    height: 40px;
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 10px auto 0 auto;
+    margin-bottom: 15px; /* กำหนด margin-bottom เท่ากันหมด */
+}
+
+/* ไม่ต้องใช้ nth-of-type อีกต่อไป */
+
+
+
+.register-box button {
+    margin-left: 30px;
+    margin-top: 10px;
+    /* ✅ เพิ่มช่องไฟจาก "forgot password?" */
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    height: 40px;
+    width: 80%;
+    background-color: #3b71f7;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.register-box button:hover {
+    transform: scale(1.05);
+}
+
+.register-box input:hover {
+    transform: scale(1.05);
+}
+
+.register-box hr {
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 80%;
+    border: none;
+    border-top: 1px solid #ddd;
+
+}
+
+.no-account {
+    margin: 15px 35px;
+}
+
+.no-account a {
+    color: #0029f5;
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .register-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .register-box input,
+    .register-box button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .register-box h1 {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login-box">
+        <h1>LOGIN</h1>
+        <form action="backend/login.php" method="post">
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <div class="forgot-password">
+                <a href="">Forgot password?</a>
+            </div>
+            <button type="submit">LOGIN</button>
+            <hr>
+            <div class="no-account">
+                <p>Don't have an account?<a href="register.html"> Sign up</a></p>
+            </div>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>

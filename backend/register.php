@@ -2,7 +2,7 @@
 session_start();
 
 // ตั้งค่าการเชื่อมต่อฐานข้อมูล
-$host = "localhost";
+$host = "localhost:3307";
 $username = "root";       // ค่าเริ่มต้นของ XAMPP
 $password = "12345678";           // ถ้าไม่ตั้งรหัสผ่าน ปล่อยว่าง
 $dbname = "taxsite";
@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $stmt->bind_param("sss", $fullname, $email, $password);
 
     if ($stmt->execute()) {
-        echo "<script>alert('สมัครสมาชิกสำเร็จ'); window.location.href = '../login.html';</script>";
+        echo "<script>alert('สมัครสมาชิกสำเร็จ'); window.location.href = '../frontend/login.html';</script>";
     } else {
         echo "<script>alert('เกิดข้อผิดพลาด'); window.history.back();</script>";
     }

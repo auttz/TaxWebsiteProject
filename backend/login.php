@@ -1,6 +1,6 @@
 <?php
 session_start();
-$host = "localhost";
+$host = "localhost:3307";
 $username = "root";
 $password = "12345678";
 $dbname = "taxsite";
@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if ($passwordInput === $password) {
             $_SESSION["userid"] = $id;
             $_SESSION["fullname"] = $fullname;
-            header("Location: ../dashboard.html");
+            header("Location: ../frontend/dashboard.html");
             exit();
         } else {
             echo "<script>alert('รหัสผ่านไม่ถูกต้อง'); window.history.back();</script>";

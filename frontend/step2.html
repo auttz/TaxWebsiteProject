@@ -29,24 +29,25 @@
             <a href="step6.html" class="step"><span>6</span><br>คำนวณภาษี</a>
         </div>
 
-        <form>
+        <form action="../backend/step2.php" method="post">
             <h3>รายการลดหย่อนภาษี : ครอบครัว</h3>
 
             <div class="form-grid">
                 <div>
                     <label for="status">สถานะสมรส</label>
-                    <select id="status" name="status">
-                        <option disabled selected>กรุณาเลือกสถานะ</option>
-                        <option value="single">โสด</option>
-                        <option value="married_joint">สมรส - คู่สมรสมีรายได้</option>
-                        <option value="married_separate">สมรส - คู่สมรสไม่มีรายได้</option>
-                        <option value="divorced">หย่า / หม้าย</option>
+                    <select id="status" name="marital_status" required>
+                        <option value="" disabled selected>กรุณาเลือกสถานะ</option>
+                        <option value="โสด">โสด</option>
+                        <option value="สมรส - คู่สมรสมีรายได้">สมรส - คู่สมรสมีรายได้</option>
+                        <option value="สมรส - คู่สมรสไม่มีรายได้">สมรส - คู่สมรสไม่มีรายได้</option>
+                        <option value="หย่า / หม้าย">หย่า / หม้าย</option>
                     </select>
+
                 </div>
 
                 <div>
                     <label for="personalDeduction">ลดหย่อนส่วนบุคคล</label>
-                    <input type="text" id="personalDeduction" value="60,000" disabled>
+                    <input type="text" id="personalDeduction" name="personal_deduction" value="60000" readonly>
                 </div>
             </div>
 

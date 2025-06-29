@@ -30,7 +30,7 @@
         </div>
 
 
-        <form>
+        <form action="../backend/dashboard.php" method="post">
             <label for="salary">เงินเดือน (บาท)</label>
             <input type="number" id="salary" name="salary" placeholder="ระบุเงินเดือน" required>
 
@@ -38,7 +38,7 @@
             <input type="number" id="bonus" name="bonus" placeholder="ระบุโบนัสที่คุณได้รับในปี">
 
             <label for="other">รายได้อื่นๆ เช่น ขายของออนไลน์/ฟรีแลนซ์</label>
-            <input type="number" id="other" name="other" placeholder="ระบุรายได้ทั้งปี">
+            <input type="number" id="other" name="other_income" placeholder="ระบุรายได้ทั้งปี">
 
             <button class="button-next" type="submit">ถัดไป</button>
         </form>

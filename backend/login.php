@@ -1,6 +1,6 @@
 <?php
 session_start();
-$host = "localhost:3307";
+$host = "localhost:3307";//port ต้องตรงกับใน mysql apache 
 $username = "root";
 $password = "12345678";
 $dbname = "taxsite";
@@ -39,3 +39,4 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $stmt->close();
     $conn->close();
 }
+?>

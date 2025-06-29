@@ -2,7 +2,7 @@
 session_start();
 
 // ตั้งค่าการเชื่อมต่อฐานข้อมูล
-$host = "localhost:3307";
+$host = "localhost:3307"; // port ต้องตรงกับใน mysql apache 
 $username = "root";       // ค่าเริ่มต้นของ XAMPP
 $password = "12345678";           // ถ้าไม่ตั้งรหัสผ่าน ปล่อยว่าง
 $dbname = "taxsite";

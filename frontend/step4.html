@@ -29,25 +29,25 @@
       <a href="step6.html" class="step"><span>6</span><br>คำนวณภาษี</a>
     </div>
 
-    <form>
+    <form action="../backend/step4.php" method="post">
       <h3>รายการลดหย่อนภาษี : ประกัน</h3>
 
-      <label for="life-insurance">เบี้ยประกันชีวิต</label>
-      <input type="number" id="life-insurance" name="life-insurance" placeholder="ระบุจำนวนเงิน">
+      <label for="life_insurance">เบี้ยประกันชีวิต</label>
+      <input type="number" id="life_insurance" name="life_insurance" placeholder="ระบุจำนวนเงิน">
       <p class="helper-text">ไม่เกิน 100,000 บาท</p>
 
-      <label for="health-insurance">เบี้ยประกันสุขภาพ</label>
-      <input type="number" id="health-insurance" name="health-insurance" placeholder="ระบุจำนวนเงิน">
+      <label for="health_insurance">เบี้ยประกันสุขภาพ</label>
+      <input type="number" id="health_insurance" name="health_insurance" placeholder="ระบุจำนวนเงิน">
       <p class="helper-text">ไม่เกิน 25,000</p>
 
       <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
 
-      <label for="parent-health">เบี้ยประกันสุขภาพบิดา,มารดา</label>
-      <input type="number" id="parent-health" name="parent-health" placeholder="ระบุจำนวนเงิน">
+      <label for="parent_health_insurance">เบี้ยประกันสุขภาพบิดา,มารดา</label>
+      <input type="number" id="parent_health_insurance" name="parent_health_insurance" placeholder="ระบุจำนวนเงิน">
       <p class="helper-text">ไม่เกิน 15,000</p>
 
-      <label for="longlife-insurance">เบี้ยประกันชีวิตบำนาญ</label>
-      <input type="number" id="longlife-insurance" name="longlife-insurance" placeholder="ระบุจำนวนเงิน">
+      <label for="long_term_life_insurance">เบี้ยประกันชีวิตบำนาญ</label>
+      <input type="number" id="long_term_life_insurance" name="long_term_life_insurance" placeholder="ระบุจำนวนเงิน">
       <p class="helper-text">
         ไม่เกิน 15% ของรายได้ทั้งปี ไม่เกิน 200,000 บาท หากไม่ได้ใช้สิทธิเบี้ยประกันชีวิตปกติ รวมเบี้ยบำนาญและกองทุน RMF รวมไม่เกิน 500,000 บาท
       </p>

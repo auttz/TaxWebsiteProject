@@ -25,9 +25,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         // ตรงนี้ใช้เปรียบเทียบแบบไม่เข้ารหัส
         if ($passwordInput === $password) {
-            $_SESSION["userid"] = $id;
+            $_SESSION["user_id"] = $id;
             $_SESSION["fullname"] = $fullname;
-            header("Location: ../frontend/dashboard.html");
+            echo "<script>alert('เข้าสู่ระบบสำเร็จ'); window.location.href = '../frontend/dashboard.html';</script>";
             exit();
         } else {
             echo "<script>alert('รหัสผ่านไม่ถูกต้อง'); window.history.back();</script>";

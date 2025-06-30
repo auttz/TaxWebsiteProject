@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
   <meta charset="UTF-8">
   <title>กองทุน ประกันสังคม และที่อยู่อาศัย</title>
   <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/step3.css">
 </head>
+
 <body>
 
   <nav class="navbar">
@@ -29,19 +31,19 @@
       <a href="step6.html" class="step"><span>6</span><br>คำนวณภาษี</a>
     </div>
 
-    <form>
+    <form action="../backend/step3.php" method="post">
       <h3>รายการลดหย่อนภาษี : กองทุน เป็นประกันสังคม และที่อยู่อาศัย</h3>
 
       <label for="pvd">กองทุนสำรองเลี้ยงชีพ (PVD)</label>
       <input type="number" id="pvd" name="pvd" placeholder="ระบุจำนวนเงิน">
       <p class="helper-text">ไม่เกิน 15% ของเงินเดือน (โปรดแนบเอกสารจากนายจ้าง) และไม่เกิน 500,000 บาท</p>
 
-      <label for="social">เงินประกันสังคม</label>
-      <input type="number" id="social" name="social" placeholder="ระบุจำนวนเงิน">
+      <label for="social_security">เงินประกันสังคม</label>
+      <input type="number" id="social_security" name="social_security" placeholder="ระบุจำนวนเงิน">
       <p class="helper-text">ไม่เกิน 9,000 บาท</p>
 
-      <label for="housing">ดอกเบี้ยที่อยู่อาศัย</label>
-      <input type="number" id="housing" name="housing" placeholder="ระบุจำนวนเงิน">
+      <label for="home_loan_interest">ดอกเบี้ยที่อยู่อาศัย</label>
+      <input type="number" id="home_loan_interest" name="home_loan_interest" placeholder="ระบุจำนวนเงิน">
       <p class="helper-text">ไม่เกิน 100,000 บาท</p>
 
       <div class="button-group">
@@ -52,4 +54,5 @@
   </div>
 
 </body>
+
 </html>

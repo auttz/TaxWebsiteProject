@@ -22,6 +22,23 @@ body {
     height: auto;
     width: 350px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transform: translateY(-30px);
+    animation: fadeInslide 0.6s ease-out forwards;
+
+}
+
+@keyframes fadeInslide {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
 }
 
 .register-box h1 {
@@ -41,7 +58,8 @@ body {
     padding: 5px 20px;
     border-radius: 5px;
     margin: 10px auto 0 auto;
-    margin-bottom: 15px; /* กำหนด margin-bottom เท่ากันหมด */
+    margin-bottom: 15px;
+    /* กำหนด margin-bottom เท่ากันหมด */
 }
 
 /* ไม่ต้องใช้ nth-of-type อีกต่อไป */
@@ -86,9 +104,17 @@ body {
 }
 
 .no-account a {
+    display: inline-block;
+    margin-right: 20px;
     color: #0029f5;
     text-decoration: none;
+    transition: transform 0.3s ease;
 }
+
+.no-account a:hover {
+    transform: scale(1.05);
+}
+
 
 @media (max-width: 480px) {
     .register-box {

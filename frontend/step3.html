@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <title>กองทุน ประกันสังคม และที่อยู่อาศัย</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/step3.css">
+</head>
+
+<body class="animated">
+
+  <nav class="navbar">
+    <h1 class="logo">MyTaxWebsite</h1>
+    <div class="menu-bar">
+      <a href="dashboard.html">Home</a>
+      <a href="login.html">Logout</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>คำนวณภาษี</h1>
+    <p class="subtitle">ช่วยคำนวณภาษีเงินได้บุคคลธรรมดาประจำปี</p>
+
+    <div class="step-bar">
+      <a href="dashboard.html" class="step"><span>1</span><br>รายรับ</a>
+      <a href="step2.html" class="step"><span>2</span><br>ลดหย่อนครอบครัว</a>
+      <a href="step3.html" class="step active"><span>3</span><br>กองทุนฯ<br>ประกันสังคม<br>คู่สมรส</a>
+      <a href="step4.html" class="step"><span>4</span><br>ประกัน</a>
+      <a href="step5.html" class="step"><span>5</span><br>กองทุนอื่น ๆ</a>
+      <a href="step6.html" class="step"><span>6</span><br>คำนวณภาษี</a>
+    </div>
+
+    <form action="../backend/step3.php" method="post">
+      <h3>รายการลดหย่อนภาษี : กองทุน เป็นประกันสังคม และที่อยู่อาศัย</h3>
+
+      <label for="pvd">กองทุนสำรองเลี้ยงชีพ (PVD)</label>
+      <input type="number" id="pvd" name="pvd" placeholder="ระบุจำนวนเงิน">
+      <p class="helper-text">ไม่เกิน 15% ของเงินเดือน (โปรดแนบเอกสารจากนายจ้าง) และไม่เกิน 500,000 บาท</p>
+
+      <label for="social_security">เงินประกันสังคม</label>
+      <input type="number" id="social_security" name="social_security" placeholder="ระบุจำนวนเงิน">
+      <p class="helper-text">ไม่เกิน 9,000 บาท</p>
+
+      <label for="home_loan_interest">ดอกเบี้ยที่อยู่อาศัย</label>
+      <input type="number" id="home_loan_interest" name="home_loan_interest" placeholder="ระบุจำนวนเงิน">
+      <p class="helper-text">ไม่เกิน 100,000 บาท</p>
+
+      <div class="button-group">
+        <button type="button" class="btn-back" onclick="location.href='step2.html'">ย้อนกลับ</button>
+        <button type="submit" class="btn-next">ถัดไป</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>

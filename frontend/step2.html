@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ลดหย่อนครอบครัว</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/step2.css">
+</head>
+
+<body class="animated">
+    <nav class="navbar">
+        <h1 class="logo">MyTaxWebsite</h1>
+        <div class="menu-bar">
+            <a href="dashboard.html">Home</a>
+            <a href="login.html">Logout</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>คำนวณภาษี</h1>
+        <p class="subtitle">ช่วยคำนวณภาษีเงินได้บุคคลธรรมดาประจำปี</p>
+
+        <div class="step-bar">
+            <a href="dashboard.html" class="step"><span>1</span><br>รายรับ</a>
+            <a href="step2.html" class="step active"><span>2</span><br>ลดหย่อนครอบครัว</a>
+            <a href="step3.html" class="step"><span>3</span><br>กองทุนฯ<br>ประกันสังคม<br>คู่สมรส</a>
+            <a href="step4.html" class="step"><span>4</span><br>ประกัน</a>
+            <a href="step5.html" class="step"><span>5</span><br>กองทุนอื่น ๆ</a>
+            <a href="step6.html" class="step"><span>6</span><br>คำนวณภาษี</a>
+        </div>
+
+        <form action="../backend/step2.php" method="post">
+            <h3>รายการลดหย่อนภาษี : ครอบครัว</h3>
+
+            <div class="form-grid">
+                <div>
+                    <label for="status">สถานะสมรส</label>
+                    <select id="status" name="marital_status" required>
+                        <option value="" disabled selected>กรุณาเลือกสถานะ</option>
+                        <option value="โสด">โสด</option>
+                        <option value="สมรส - คู่สมรสมีรายได้">สมรส - คู่สมรสมีรายได้</option>
+                        <option value="สมรส - คู่สมรสไม่มีรายได้">สมรส - คู่สมรสไม่มีรายได้</option>
+                        <option value="หย่า / หม้าย">หย่า / หม้าย</option>
+                    </select>
+
+                </div>
+
+                <div>
+                    <label for="personalDeduction">ลดหย่อนส่วนบุคคล</label>
+                    <input type="text" id="personalDeduction" name="personal_deduction" value="60000" readonly>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button type="button" class="btn-back" onclick="location.href='Dashboard.html'">ย้อนกลับ</button>
+                <button type="submit" class="btn-next">ถัดไป</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
